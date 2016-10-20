@@ -1,0 +1,28 @@
+[2016/10/19 15:49:44.540] [.info] [cm/util/sysdep_unix.go:LockAutomationLockFile:170] [15:49:44.540] Locking automation lock file at /tmp/mongodb-mms-automation.lock
+[15:49:45.624] All 0 Mongo processes are in goal state, No monitoring agent specified, No backup agent specified
+[15:49:55.635] All 0 Mongo processes are in goal state, No monitoring agent specified, No backup agent specified
+[15:50:05.664] All 0 Mongo processes are in goal state, No monitoring agent specified, No backup agent specified
+[15:50:15.685] All 0 Mongo processes are in goal state, No monitoring agent specified, No backup agent specified
+<myStandalone_0> [15:50:15.812] ... process has a plan : Download,Start
+<myStandalone_0> [15:50:15.818] Running step 'Download' as part of move 'Download'
+<myStandalone_0> [15:50:15.819] Starting to download and extract https://fastdl.mongodb.org/osx/mongodb-osx-x86_64-3.2.10.tgz into /var/lib/mongodb-mms-automation
+<myStandalone_0> [15:50:27.330] Successfully finished with download and extract for action.downloadCoords{url:"https://fastdl.mongodb.org/osx/mongodb-osx-x86_64-3.2.10.tgz", versionTrueName:"3.2.10", versionStr:"3.2.10_64-79d9b3ab5ce20f51c272b4411202710a082d0317()", downloadBase:"/var/lib/mongodb-mms-automation"}
+[15:50:27.832] Still in error state. iteration 7
+<myStandalone_0> [15:50:28.460] ... process has a plan : Start
+<myStandalone_0> [15:50:28.488] Running step 'StartFresh' as part of move 'Start'
+<myStandalone_0> [15:50:28.520] Starting mongod! cmd=Args=[/var/lib/mongodb-mms-automation/mongodb-osx-x86_64-3.2.10/bin/mongod -f /data/myStandalone2/automation-mongod.conf]
+ConfigFile :
+# THIS FILE IS MAINTAINED BY http://localhost:8080 . DO NOT MODIFY AS IT WILL BE OVERWRITTEN.
+# To make changes to your MongoDB deployment, please visit http://mongodb-cloud-denniskuczynski.ngrok.io . Your Group ID is 55a06f300cc6908d8bb5632b .
+net:
+  port: 27000
+processManagement:
+  fork: "true"
+storage:
+  dbPath: /data/myStandalone2
+systemLog:
+  destination: file
+  path: /data/myStandalone/mongodb.log
+
+<myStandalone_0> [15:50:29.908] Slept until start.go's sleepUntilProcessUp (function com.tengen/cm/mongoctl.ProcessUp) returned true.  It took 470.238653ms.
+[15:50:37.858] All 1 Mongo processes are in goal state, No monitoring agent specified, No backup agent specified

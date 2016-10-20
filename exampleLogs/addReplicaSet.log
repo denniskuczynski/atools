@@ -1,0 +1,79 @@
+[2016/10/20 16:02:40.634] [.info] [cm/util/sysdep_unix.go:LockAutomationLockFile:170] [16:02:40.634] Locking automation lock file at /tmp/mongodb-mms-automation.lock
+[16:02:41.737] All 0 Mongo processes are in goal state, No monitoring agent specified, No backup agent specified
+[16:02:51.747] All 0 Mongo processes are in goal state, No monitoring agent specified, No backup agent specified
+<myRS_1> [16:02:51.913] ... process has a plan : Start,WaitRsInit
+<myRS_2> [16:02:51.919] ... process has a plan : Start,WaitRsInit
+<myRS_0> [16:02:51.924] ... process has a plan : Start,WaitAllRsMembersUp,RsInit
+<myRS_1> [16:02:51.939] Running step 'StartFresh' as part of move 'Start'
+<myRS_2> [16:02:51.950] Running step 'StartFresh' as part of move 'Start'
+<myRS_0> [16:02:51.954] Running step 'StartFresh' as part of move 'Start'
+<myRS_1> [16:02:51.970] Starting mongod! cmd=Args=[/var/lib/mongodb-mms-automation/mongodb-osx-x86_64-3.2.10/bin/mongod -f /tmp/data/myRS_1/automation-mongod.conf]
+ConfigFile :
+# THIS FILE IS MAINTAINED BY http://localhost:8080 . DO NOT MODIFY AS IT WILL BE OVERWRITTEN.
+# To make changes to your MongoDB deployment, please visit http://mongodb-cloud-denniskuczynski.ngrok.io . Your Group ID is 55a06f300cc6908d8bb5632b .
+net:
+  port: 3001
+operationProfiling: {}
+processManagement:
+  fork: "true"
+replication:
+  replSetName: myRS
+storage:
+  dbPath: /tmp/data/myRS_1
+systemLog:
+  destination: file
+  path: /tmp/data/myRS_1/mongodb.log
+
+<myRS_2> [16:02:51.978] Starting mongod! cmd=Args=[/var/lib/mongodb-mms-automation/mongodb-osx-x86_64-3.2.10/bin/mongod -f /tmp/data/myRS_2/automation-mongod.conf]
+ConfigFile :
+# THIS FILE IS MAINTAINED BY http://localhost:8080 . DO NOT MODIFY AS IT WILL BE OVERWRITTEN.
+# To make changes to your MongoDB deployment, please visit http://mongodb-cloud-denniskuczynski.ngrok.io . Your Group ID is 55a06f300cc6908d8bb5632b .
+net:
+  port: 3002
+operationProfiling: {}
+processManagement:
+  fork: "true"
+replication:
+  replSetName: myRS
+storage:
+  dbPath: /tmp/data/myRS_2
+systemLog:
+  destination: file
+  path: /tmp/data/myRS_2/mongodb.log
+
+<myRS_0> [16:02:51.994] Starting mongod! cmd=Args=[/var/lib/mongodb-mms-automation/mongodb-osx-x86_64-3.2.10/bin/mongod -f /tmp/data/myRS_0/automation-mongod.conf]
+ConfigFile :
+# THIS FILE IS MAINTAINED BY http://localhost:8080 . DO NOT MODIFY AS IT WILL BE OVERWRITTEN.
+# To make changes to your MongoDB deployment, please visit http://mongodb-cloud-denniskuczynski.ngrok.io . Your Group ID is 55a06f300cc6908d8bb5632b .
+net:
+  port: 3000
+operationProfiling: {}
+processManagement:
+  fork: "true"
+replication:
+  replSetName: myRS
+storage:
+  dbPath: /tmp/data/myRS_0
+systemLog:
+  destination: file
+  path: /tmp/data/myRS_0/mongodb.log
+
+<myRS_2> [16:03:00.520] Still sleeping until start.go's sleepUntilProcessUp (function com.tengen/cm/mongoctl.ProcessUp) returns true.  It's been 5s.
+<myRS_2> [16:03:00.521] Slept until start.go's sleepUntilProcessUp (function com.tengen/cm/mongoctl.ProcessUp) returned true.  It took 5.040491901s.
+<myRS_2> [16:03:00.590] Running step 'WaitRsInit' as part of move 'WaitRsInit'
+<myRS_0> [16:03:00.997] Still sleeping until start.go's sleepUntilProcessUp (function com.tengen/cm/mongoctl.ProcessUp) returns true.  It's been 5s.
+<myRS_0> [16:03:00.997] Slept until start.go's sleepUntilProcessUp (function com.tengen/cm/mongoctl.ProcessUp) returned true.  It took 5.036882582s.
+<myRS_0> [16:03:01.035] Running step 'WaitAllRsMembersUp' as part of move 'WaitAllRsMembersUp'
+<myRS_0> [16:03:01.072] Running step 'RsInit' as part of move 'RsInit'
+<myRS_0> [16:03:01.072] Running ReplSetInitiate : map[_id:myRS members:[map[votes:1 slaveDelay:0 buildIndexes:true arbiterOnly:false priority:1 _id:0 tags:map[] hidden:false host:dennismac:3000] map[priority:1 slaveDelay:0 buildIndexes:true tags:map[] arbiterOnly:false hidden:false _id:1 host:dennismac:3001 votes:1] map[tags:map[] hidden:false arbiterOnly:true host:dennismac:3002 priority:0 slaveDelay:0 votes:1 buildIndexes:true _id:2]] settings:map[]]
+<myRS_1> [16:03:01.123] Still sleeping until start.go's sleepUntilProcessUp (function com.tengen/cm/mongoctl.ProcessUp) returns true.  It's been 5s.
+<myRS_1> [16:03:01.162] Slept until start.go's sleepUntilProcessUp (function com.tengen/cm/mongoctl.ProcessUp) returned true.  It took 5.076361563s.
+<myRS_1> [16:03:01.206] Running step 'WaitRsInit' as part of move 'WaitRsInit'
+<myRS_2> [16:03:01.911] ... process has a plan : WaitRsInit
+<myRS_2> [16:03:01.950] Running step 'WaitRsInit' as part of move 'WaitRsInit'
+<myRS_1> [16:03:02.469] ... process has a plan : WaitRsInit
+<myRS_1> [16:03:02.503] Running step 'WaitRsInit' as part of move 'WaitRsInit'
+<myRS_2> [16:03:03.041] ... process has a plan : WaitRsInit
+<myRS_2> [16:03:03.076] Running step 'WaitRsInit' as part of move 'WaitRsInit'
+[16:03:04.932] All 3 Mongo processes are in goal state, No monitoring agent specified, No backup agent specified
+[16:03:14.941] All 3 Mongo processes are in goal state, No monitoring agent specified, No backup agent specified

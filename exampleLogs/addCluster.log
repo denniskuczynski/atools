@@ -1,0 +1,297 @@
+[2016/10/20 16:06:40.268] [.info] [cm/util/sysdep_unix.go:LockAutomationLockFile:170] [16:06:40.268] Locking automation lock file at /tmp/mongodb-mms-automation.lock
+[16:06:41.360] All 0 Mongo processes are in goal state, No monitoring agent specified, No backup agent specified
+[16:06:51.372] All 0 Mongo processes are in goal state, No monitoring agent specified, No backup agent specified
+<myCluster_myShard_1_5> [16:06:51.665] ... process has a plan : Start,WaitRsInit
+<myCluster_myShard_0_2> [16:06:51.666] ... process has a plan : Start,WaitRsInit
+<myCluster_myShard_1_4> [16:06:51.676] ... process has a plan : Start,WaitRsInit
+<myCluster_myShard_0_0> [16:06:51.677] ... process has a plan : Start,WaitAllRsMembersUp,RsInit
+<myCluster_myShard_1_3> [16:06:51.721] ... process has a plan : Start,WaitAllRsMembersUp,RsInit
+<myCluster_myShard_1_5> [16:06:51.721] Running step 'StartFresh' as part of move 'Start'
+<myCluster_myShard_0_1> [16:06:51.722] ... process has a plan : Start,WaitRsInit
+<myCluster_myShard_0_2> [16:06:51.726] Running step 'StartFresh' as part of move 'Start'
+<configRS_7> [16:06:51.737] ... process has a plan : Start,WaitRsInit
+<myCluster_myShard_0_0> [16:06:51.745] Running step 'StartFresh' as part of move 'Start'
+<myCluster_myShard_1_4> [16:06:51.745] Running step 'StartFresh' as part of move 'Start'
+<configRS_8> [16:06:51.745] ... process has a plan : Start,WaitRsInit
+<myCluster_myShard_0_2> [16:06:51.788] Starting mongod! cmd=Args=[/var/lib/mongodb-mms-automation/mongodb-osx-x86_64-3.2.10/bin/mongod -f /tmp/data/myCluster_myShard_0_2/automation-mongod.conf]
+ConfigFile :
+# THIS FILE IS MAINTAINED BY http://localhost:8080 . DO NOT MODIFY AS IT WILL BE OVERWRITTEN.
+# To make changes to your MongoDB deployment, please visit http://mongodb-cloud-denniskuczynski.ngrok.io . Your Group ID is 55a06f300cc6908d8bb5632b .
+net:
+  port: 3003
+operationProfiling: {}
+processManagement:
+  fork: "true"
+replication:
+  replSetName: myShard_0
+storage:
+  dbPath: /tmp/data/myCluster_myShard_0_2
+systemLog:
+  destination: file
+  path: /tmp/data/myCluster_myShard_0_2/mongodb.log
+
+<myCluster_myShard_1_5> [16:06:51.788] Starting mongod! cmd=Args=[/var/lib/mongodb-mms-automation/mongodb-osx-x86_64-3.2.10/bin/mongod -f /tmp/data/myCluster_myShard_1_5/automation-mongod.conf]
+ConfigFile :
+# THIS FILE IS MAINTAINED BY http://localhost:8080 . DO NOT MODIFY AS IT WILL BE OVERWRITTEN.
+# To make changes to your MongoDB deployment, please visit http://mongodb-cloud-denniskuczynski.ngrok.io . Your Group ID is 55a06f300cc6908d8bb5632b .
+net:
+  port: 3006
+operationProfiling: {}
+processManagement:
+  fork: "true"
+replication:
+  replSetName: myShard_1
+storage:
+  dbPath: /tmp/data/myCluster_myShard_1_5
+systemLog:
+  destination: file
+  path: /tmp/data/myCluster_myShard_1_5/mongodb.log
+
+<myCluster_myShard_1_4> [16:06:51.805] Starting mongod! cmd=Args=[/var/lib/mongodb-mms-automation/mongodb-osx-x86_64-3.2.10/bin/mongod -f /tmp/data/myCluster_myShard_1_4/automation-mongod.conf]
+ConfigFile :
+# THIS FILE IS MAINTAINED BY http://localhost:8080 . DO NOT MODIFY AS IT WILL BE OVERWRITTEN.
+# To make changes to your MongoDB deployment, please visit http://mongodb-cloud-denniskuczynski.ngrok.io . Your Group ID is 55a06f300cc6908d8bb5632b .
+net:
+  port: 3005
+operationProfiling: {}
+processManagement:
+  fork: "true"
+replication:
+  replSetName: myShard_1
+storage:
+  dbPath: /tmp/data/myCluster_myShard_1_4
+systemLog:
+  destination: file
+  path: /tmp/data/myCluster_myShard_1_4/mongodb.log
+
+<myCluster_myShard_0_0> [16:06:51.811] Starting mongod! cmd=Args=[/var/lib/mongodb-mms-automation/mongodb-osx-x86_64-3.2.10/bin/mongod -f /tmp/data/myCluster_myShard_0_0/automation-mongod.conf]
+ConfigFile :
+# THIS FILE IS MAINTAINED BY http://localhost:8080 . DO NOT MODIFY AS IT WILL BE OVERWRITTEN.
+# To make changes to your MongoDB deployment, please visit http://mongodb-cloud-denniskuczynski.ngrok.io . Your Group ID is 55a06f300cc6908d8bb5632b .
+net:
+  port: 3001
+operationProfiling: {}
+processManagement:
+  fork: "true"
+replication:
+  replSetName: myShard_0
+storage:
+  dbPath: /tmp/data/myCluster_myShard_0_0
+systemLog:
+  destination: file
+  path: /tmp/data/myCluster_myShard_0_0/mongodb.log
+
+<myCluster_myShard_1_3> [16:06:51.813] Running step 'StartFresh' as part of move 'Start'
+<myCluster_myShard_0_1> [16:06:51.814] Running step 'StartFresh' as part of move 'Start'
+<myCluster_mongos_9> [16:06:51.835] ... process has a plan : WaitConfigServersReady,Start,WaitShardsUpdated
+<configRS_6> [16:06:51.849] ... process has a plan : Start,WaitAllRsMembersUp,RsInit
+<myCluster_myShard_0_1> [16:06:51.911] Starting mongod! cmd=Args=[/var/lib/mongodb-mms-automation/mongodb-osx-x86_64-3.2.10/bin/mongod -f /tmp/data/myCluster_myShard_0_1/automation-mongod.conf]
+ConfigFile :
+# THIS FILE IS MAINTAINED BY http://localhost:8080 . DO NOT MODIFY AS IT WILL BE OVERWRITTEN.
+# To make changes to your MongoDB deployment, please visit http://mongodb-cloud-denniskuczynski.ngrok.io . Your Group ID is 55a06f300cc6908d8bb5632b .
+net:
+  port: 3002
+operationProfiling: {}
+processManagement:
+  fork: "true"
+replication:
+  replSetName: myShard_0
+storage:
+  dbPath: /tmp/data/myCluster_myShard_0_1
+systemLog:
+  destination: file
+  path: /tmp/data/myCluster_myShard_0_1/mongodb.log
+
+<myCluster_myShard_1_3> [16:06:51.911] Starting mongod! cmd=Args=[/var/lib/mongodb-mms-automation/mongodb-osx-x86_64-3.2.10/bin/mongod -f /tmp/data/myCluster_myShard_1_3/automation-mongod.conf]
+ConfigFile :
+# THIS FILE IS MAINTAINED BY http://localhost:8080 . DO NOT MODIFY AS IT WILL BE OVERWRITTEN.
+# To make changes to your MongoDB deployment, please visit http://mongodb-cloud-denniskuczynski.ngrok.io . Your Group ID is 55a06f300cc6908d8bb5632b .
+net:
+  port: 3004
+operationProfiling: {}
+processManagement:
+  fork: "true"
+replication:
+  replSetName: myShard_1
+storage:
+  dbPath: /tmp/data/myCluster_myShard_1_3
+systemLog:
+  destination: file
+  path: /tmp/data/myCluster_myShard_1_3/mongodb.log
+
+<configRS_7> [16:06:52.041] Running step 'StartFresh' as part of move 'Start'
+<configRS_6> [16:06:52.050] Running step 'StartFresh' as part of move 'Start'
+<configRS_8> [16:06:52.057] Running step 'StartFresh' as part of move 'Start'
+<configRS_8> [16:06:52.164] Starting mongod! cmd=Args=[/var/lib/mongodb-mms-automation/mongodb-osx-x86_64-3.2.10/bin/mongod -f /tmp/data/configRS_8/automation-mongod.conf]
+ConfigFile :
+# THIS FILE IS MAINTAINED BY http://localhost:8080 . DO NOT MODIFY AS IT WILL BE OVERWRITTEN.
+# To make changes to your MongoDB deployment, please visit http://mongodb-cloud-denniskuczynski.ngrok.io . Your Group ID is 55a06f300cc6908d8bb5632b .
+net:
+  port: 3012
+operationProfiling: {}
+processManagement:
+  fork: "true"
+replication:
+  replSetName: configRS
+sharding:
+  clusterRole: configsvr
+storage:
+  dbPath: /tmp/data/configRS_8
+systemLog:
+  destination: file
+  path: /tmp/data/configRS_8/mongodb.log
+
+<configRS_7> [16:06:52.164] Starting mongod! cmd=Args=[/var/lib/mongodb-mms-automation/mongodb-osx-x86_64-3.2.10/bin/mongod -f /tmp/data/configRS_7/automation-mongod.conf]
+ConfigFile :
+# THIS FILE IS MAINTAINED BY http://localhost:8080 . DO NOT MODIFY AS IT WILL BE OVERWRITTEN.
+# To make changes to your MongoDB deployment, please visit http://mongodb-cloud-denniskuczynski.ngrok.io . Your Group ID is 55a06f300cc6908d8bb5632b .
+net:
+  port: 3011
+operationProfiling: {}
+processManagement:
+  fork: "true"
+replication:
+  replSetName: configRS
+sharding:
+  clusterRole: configsvr
+storage:
+  dbPath: /tmp/data/configRS_7
+systemLog:
+  destination: file
+  path: /tmp/data/configRS_7/mongodb.log
+
+<configRS_6> [16:06:52.164] Starting mongod! cmd=Args=[/var/lib/mongodb-mms-automation/mongodb-osx-x86_64-3.2.10/bin/mongod -f /tmp/data/configRS_6/automation-mongod.conf]
+ConfigFile :
+# THIS FILE IS MAINTAINED BY http://localhost:8080 . DO NOT MODIFY AS IT WILL BE OVERWRITTEN.
+# To make changes to your MongoDB deployment, please visit http://mongodb-cloud-denniskuczynski.ngrok.io . Your Group ID is 55a06f300cc6908d8bb5632b .
+net:
+  port: 3010
+operationProfiling: {}
+processManagement:
+  fork: "true"
+replication:
+  replSetName: configRS
+sharding:
+  clusterRole: configsvr
+storage:
+  dbPath: /tmp/data/configRS_6
+systemLog:
+  destination: file
+  path: /tmp/data/configRS_6/mongodb.log
+
+<myCluster_mongos_9> [16:07:02.050] Running step 'CheckDoesNotNeedBounceRestart' as part of move 'WaitConfigServersReady'
+<myCluster_myShard_1_5> [16:07:11.302] Still sleeping until start.go's sleepUntilProcessUp (function com.tengen/cm/mongoctl.ProcessUp) returns true.  It's been 5s.
+<myCluster_myShard_1_5> [16:07:16.341] Still sleeping until start.go's sleepUntilProcessUp (function com.tengen/cm/mongoctl.ProcessUp) returns true.  It's been 10s.
+<myCluster_myShard_1_5> [16:07:16.381] Slept until start.go's sleepUntilProcessUp (function com.tengen/cm/mongoctl.ProcessUp) returned true.  It took 15.123050975s.
+<myCluster_myShard_1_4> [16:07:19.418] Still sleeping until start.go's sleepUntilProcessUp (function com.tengen/cm/mongoctl.ProcessUp) returns true.  It's been 5s.
+<myCluster_myShard_1_4> [16:07:21.392] Slept until start.go's sleepUntilProcessUp (function com.tengen/cm/mongoctl.ProcessUp) returned true.  It took 12.013608713s.
+<myCluster_myShard_1_5> [16:07:21.444] Running step 'WaitRsInit' as part of move 'WaitRsInit'
+<myCluster_myShard_0_2> [16:07:22.322] Still sleeping until start.go's sleepUntilProcessUp (function com.tengen/cm/mongoctl.ProcessUp) returns true.  It's been 5s.
+<myCluster_myShard_0_2> [16:07:22.322] Slept until start.go's sleepUntilProcessUp (function com.tengen/cm/mongoctl.ProcessUp) returned true.  It took 8.620380336s.
+<myCluster_mongos_9> [16:07:22.633] Running step 'WaitConfigServersReady' as part of move 'WaitConfigServersReady'
+<myCluster_myShard_0_2> [16:07:22.698] Running step 'WaitRsInit' as part of move 'WaitRsInit'
+<myCluster_myShard_1_3> [16:07:22.784] Slept until start.go's sleepUntilProcessUp (function com.tengen/cm/mongoctl.ProcessUp) returned true.  It took 3.602593154s.
+<myCluster_myShard_1_3> [16:07:22.851] Running step 'WaitAllRsMembersUp' as part of move 'WaitAllRsMembersUp'
+<myCluster_myShard_0_1> [16:07:22.867] Slept until start.go's sleepUntilProcessUp (function com.tengen/cm/mongoctl.ProcessUp) returned true.  It took 3.604571983s.
+<myCluster_myShard_1_3> [16:07:22.944] Running step 'RsInit' as part of move 'RsInit'
+<myCluster_myShard_1_3> [16:07:22.944] Running ReplSetInitiate : map[_id:myShard_1 members:[map[host:dennismac:3004 slaveDelay:0 votes:1 buildIndexes:true arbiterOnly:false priority:1 tags:map[] _id:0 hidden:false] map[hidden:false slaveDelay:0 buildIndexes:true tags:map[] arbiterOnly:false _id:1 host:dennismac:3005 votes:1 priority:1] map[slaveDelay:0 priority:0 hidden:false votes:1 tags:map[] arbiterOnly:true host:dennismac:3006 buildIndexes:true _id:2]] settings:map[]]
+<myCluster_myShard_0_1> [16:07:22.946] Running step 'WaitRsInit' as part of move 'WaitRsInit'
+<myCluster_myShard_0_0> [16:07:23.071] Still sleeping until start.go's sleepUntilProcessUp (function com.tengen/cm/mongoctl.ProcessUp) returns true.  It's been 5s.
+<myCluster_myShard_0_0> [16:07:23.126] Slept until start.go's sleepUntilProcessUp (function com.tengen/cm/mongoctl.ProcessUp) returned true.  It took 8.698675875s.
+<myCluster_myShard_0_0> [16:07:23.176] Running step 'WaitAllRsMembersUp' as part of move 'WaitAllRsMembersUp'
+<myCluster_myShard_0_0> [16:07:23.234] Running step 'RsInit' as part of move 'RsInit'
+<myCluster_myShard_0_0> [16:07:23.234] Running ReplSetInitiate : map[_id:myShard_0 members:[map[buildIndexes:true tags:map[] arbiterOnly:false slaveDelay:0 _id:0 votes:1 hidden:false host:dennismac:3001 priority:1] map[arbiterOnly:false tags:map[] _id:1 slaveDelay:0 votes:1 priority:1 host:dennismac:3002 buildIndexes:true hidden:false] map[priority:0 votes:1 tags:map[] arbiterOnly:true slaveDelay:0 _id:2 hidden:false host:dennismac:3003 buildIndexes:true]] settings:map[]]
+<configRS_7> [16:07:23.236] Still sleeping until start.go's sleepUntilProcessUp (function com.tengen/cm/mongoctl.ProcessUp) returns true.  It's been 5s.
+<configRS_7> [16:07:23.236] Slept until start.go's sleepUntilProcessUp (function com.tengen/cm/mongoctl.ProcessUp) returned true.  It took 5.041512406s.
+<configRS_8> [16:07:23.411] Still sleeping until start.go's sleepUntilProcessUp (function com.tengen/cm/mongoctl.ProcessUp) returns true.  It's been 5s.
+<myCluster_myShard_1_4> [16:07:23.453] Running step 'WaitRsInit' as part of move 'WaitRsInit'
+<configRS_8> [16:07:23.500] Slept until start.go's sleepUntilProcessUp (function com.tengen/cm/mongoctl.ProcessUp) returned true.  It took 5.125250171s.
+<configRS_8> [16:07:23.663] Running step 'WaitRsInit' as part of move 'WaitRsInit'
+<configRS_7> [16:07:23.663] Running step 'WaitRsInit' as part of move 'WaitRsInit'
+<myCluster_mongos_9> [16:07:23.920] ... process has a plan : WaitConfigServersReady,Start,WaitShardsUpdated
+<myCluster_mongos_9> [16:07:23.982] Running step 'CheckDoesNotNeedBounceRestart' as part of move 'WaitConfigServersReady'
+<configRS_6> [16:07:24.001] Slept until start.go's sleepUntilProcessUp (function com.tengen/cm/mongoctl.ProcessUp) returned true.  It took 3.651555265s.
+<myCluster_mongos_9> [16:07:24.028] Running step 'WaitConfigServersReady' as part of move 'WaitConfigServersReady'
+<configRS_6> [16:07:24.089] Running step 'WaitAllRsMembersUp' as part of move 'WaitAllRsMembersUp'
+<myCluster_myShard_0_2> [16:07:24.152] ... process has a plan : WaitRsInit
+<configRS_6> [16:07:24.168] Running step 'RsInit' as part of move 'RsInit'
+<configRS_6> [16:07:24.169] Running ReplSetInitiate : map[_id:configRS members:[map[tags:map[] priority:1 slaveDelay:0 votes:1 _id:0 arbiterOnly:false hidden:false host:dennismac:3010 buildIndexes:true] map[slaveDelay:0 _id:1 buildIndexes:true tags:map[] hidden:false priority:1 arbiterOnly:false host:dennismac:3011 votes:1] map[arbiterOnly:false hidden:false buildIndexes:true priority:1 slaveDelay:0 votes:1 tags:map[] _id:2 host:dennismac:3012]] settings:map[] configsvr:true protocolVersion:1]
+<myCluster_myShard_0_2> [16:07:24.203] Running step 'WaitRsInit' as part of move 'WaitRsInit'
+<myCluster_myShard_0_1> [16:07:24.610] ... process has a plan : WaitRsInit
+<myCluster_myShard_0_1> [16:07:24.672] Running step 'WaitRsInit' as part of move 'WaitRsInit'
+<myCluster_mongos_9> [16:07:25.173] ... process has a plan : WaitConfigServersReady,Start,WaitShardsUpdated
+<myCluster_mongos_9> [16:07:25.218] Running step 'CheckDoesNotNeedBounceRestart' as part of move 'WaitConfigServersReady'
+<myCluster_mongos_9> [16:07:25.275] Running step 'WaitConfigServersReady' as part of move 'WaitConfigServersReady'
+<myCluster_myShard_0_2> [16:07:25.322] ... process has a plan : WaitRsInit
+<myCluster_myShard_0_2> [16:07:25.380] Running step 'WaitRsInit' as part of move 'WaitRsInit'
+<myCluster_myShard_1_5> [16:07:25.779] ... process has a plan : WaitRsInit
+<myCluster_myShard_0_1> [16:07:25.780] ... process has a plan : WaitRsInit
+<myCluster_myShard_1_5> [16:07:25.818] Running step 'WaitRsInit' as part of move 'WaitRsInit'
+<myCluster_myShard_0_1> [16:07:25.830] Running step 'WaitRsInit' as part of move 'WaitRsInit'
+<myCluster_myShard_1_4> [16:07:25.899] ... process has a plan : WaitRsInit
+<myCluster_myShard_1_4> [16:07:25.947] Running step 'WaitRsInit' as part of move 'WaitRsInit'
+<myCluster_mongos_9> [16:07:26.427] ... process has a plan : WaitConfigServersReady,Start,WaitShardsUpdated
+<configRS_7> [16:07:26.429] ... process has a plan : WaitRsInit
+<configRS_8> [16:07:26.483] ... process has a plan : WaitRsInit
+<myCluster_mongos_9> [16:07:26.497] Running step 'CheckDoesNotNeedBounceRestart' as part of move 'WaitConfigServersReady'
+<myCluster_myShard_0_2> [16:07:26.536] ... process has a plan : WaitRsInit
+<configRS_7> [16:07:26.544] Running step 'WaitRsInit' as part of move 'WaitRsInit'
+<myCluster_mongos_9> [16:07:26.589] Running step 'WaitConfigServersReady' as part of move 'WaitConfigServersReady'
+<configRS_8> [16:07:26.599] Running step 'WaitRsInit' as part of move 'WaitRsInit'
+<myCluster_myShard_0_2> [16:07:26.618] Running step 'WaitRsInit' as part of move 'WaitRsInit'
+<myCluster_myShard_0_1> [16:07:26.951] ... process has a plan : WaitRsInit
+<myCluster_myShard_0_1> [16:07:26.992] Running step 'WaitRsInit' as part of move 'WaitRsInit'
+<myCluster_mongos_9> [16:07:27.798] ... process has a plan : WaitConfigServersReady,Start,WaitShardsUpdated
+<configRS_8> [16:07:27.866] ... process has a plan : WaitRsInit
+<configRS_7> [16:07:27.869] ... process has a plan : WaitRsInit
+<myCluster_mongos_9> [16:07:27.869] Running step 'CheckDoesNotNeedBounceRestart' as part of move 'WaitConfigServersReady'
+<configRS_8> [16:07:27.927] Running step 'WaitRsInit' as part of move 'WaitRsInit'
+<myCluster_mongos_9> [16:07:27.931] Running step 'WaitConfigServersReady' as part of move 'WaitConfigServersReady'
+<configRS_7> [16:07:27.945] Running step 'WaitRsInit' as part of move 'WaitRsInit'
+<myCluster_mongos_9> [16:07:29.096] ... process has a plan : WaitConfigServersReady,Start,WaitShardsUpdated
+<myCluster_mongos_9> [16:07:29.144] Running step 'CheckDoesNotNeedBounceRestart' as part of move 'WaitConfigServersReady'
+<myCluster_mongos_9> [16:07:29.185] Running step 'WaitConfigServersReady' as part of move 'WaitConfigServersReady'
+<myCluster_mongos_9> [16:07:30.313] ... process has a plan : WaitConfigServersReady,Start,WaitShardsUpdated
+<myCluster_mongos_9> [16:07:30.364] Running step 'CheckDoesNotNeedBounceRestart' as part of move 'WaitConfigServersReady'
+<myCluster_mongos_9> [16:07:30.417] Running step 'WaitConfigServersReady' as part of move 'WaitConfigServersReady'
+<myCluster_mongos_9> [16:07:31.543] ... process has a plan : WaitConfigServersReady,Start,WaitShardsUpdated
+<myCluster_mongos_9> [16:07:31.583] Running step 'CheckDoesNotNeedBounceRestart' as part of move 'WaitConfigServersReady'
+<myCluster_mongos_9> [16:07:31.624] Running step 'WaitConfigServersReady' as part of move 'WaitConfigServersReady'
+<myCluster_mongos_9> [16:07:32.735] ... process has a plan : WaitConfigServersReady,Start,WaitShardsUpdated
+<myCluster_mongos_9> [16:07:32.775] Running step 'CheckDoesNotNeedBounceRestart' as part of move 'WaitConfigServersReady'
+<myCluster_mongos_9> [16:07:32.813] Running step 'WaitConfigServersReady' as part of move 'WaitConfigServersReady'
+<myCluster_mongos_9> [16:07:33.925] ... process has a plan : WaitConfigServersReady,Start,WaitShardsUpdated
+<myCluster_mongos_9> [16:07:33.963] Running step 'CheckDoesNotNeedBounceRestart' as part of move 'WaitConfigServersReady'
+<myCluster_mongos_9> [16:07:34.005] Running step 'WaitConfigServersReady' as part of move 'WaitConfigServersReady'
+<myCluster_mongos_9> [16:07:35.131] ... process has a plan : WaitConfigServersReady,Start,WaitShardsUpdated
+<myCluster_mongos_9> [16:07:35.185] Running step 'CheckDoesNotNeedBounceRestart' as part of move 'WaitConfigServersReady'
+<myCluster_mongos_9> [16:07:35.236] Running step 'WaitConfigServersReady' as part of move 'WaitConfigServersReady'
+<myCluster_mongos_9> [16:07:36.365] ... process has a plan : WaitConfigServersReady,Start,WaitShardsUpdated
+<myCluster_mongos_9> [16:07:36.406] Running step 'CheckDoesNotNeedBounceRestart' as part of move 'WaitConfigServersReady'
+<myCluster_mongos_9> [16:07:36.448] Running step 'WaitConfigServersReady' as part of move 'WaitConfigServersReady'
+<myCluster_myShard_0_0> [16:07:36.953] ... process has a plan : AdjustRoles
+<myCluster_myShard_0_0> [16:07:37.003] Running step 'AdjustRoles' as part of move 'AdjustRoles'
+<myCluster_mongos_9> [16:07:37.549] ... process has a plan : Start,WaitShardsUpdated
+<myCluster_mongos_9> [16:07:37.587] Running step 'StartFresh' as part of move 'Start'
+<myCluster_mongos_9> [16:07:37.609] Starting mongos! cmd=Args=[/var/lib/mongodb-mms-automation/mongodb-osx-x86_64-3.2.10/bin/mongos -f /var/lib/mongodb-mms-automation/workspace/mongos-myCluster_mongos_9.conf]
+ConfigFile :
+# THIS FILE IS MAINTAINED BY http://localhost:8080 . DO NOT MODIFY AS IT WILL BE OVERWRITTEN.
+# To make changes to your MongoDB deployment, please visit http://mongodb-cloud-denniskuczynski.ngrok.io . Your Group ID is 55a06f300cc6908d8bb5632b .
+net:
+  port: 3000
+operationProfiling: {}
+processManagement:
+  fork: "true"
+sharding:
+  configDB: configRS/dennismac:3010,dennismac:3011,dennismac:3012
+systemLog:
+  destination: file
+  path: /tmp/data/myCluster_mongos_9/mongodb.log
+
+[16:07:37.682] Still in error state. iteration 33
+<myCluster_mongos_9> [16:07:44.261] Slept until start.go's sleepUntilProcessUp (function com.tengen/cm/mongoctl.ProcessUp) returned true.  It took 16.521678ms.
+<myCluster_mongos_9> [16:07:44.580] Running step 'WaitShardsUpdated' as part of move 'WaitShardsUpdated'
+<myCluster_mongos_9> [16:07:45.643] ... process has a plan : UpdateShards
+<myCluster_mongos_9> [16:07:45.690] Running step 'CheckNeedsUpdateShards' as part of move 'UpdateShards'
+<myCluster_mongos_9> [16:07:45.741] Running step 'UpdateShards' as part of move 'UpdateShards'
+[16:07:47.705] All 10 Mongo processes are in goal state, No monitoring agent specified, No backup agent specified

@@ -1,0 +1,3 @@
+[2016/10/19 13:34:13.621] [.info] [cm/util/sysdep_unix.go:LockAutomationLockFile:170] [13:34:13.619] Locking automation lock file at /tmp/mongodb-mms-automation.lock
+[13:34:14.786] All 0 Mongo processes are in goal state, No monitoring agent specified, No backup agent specified
+[13:34:24.812] All 0 Mongo processes are in goal state, No monitoring agent specified, No backup agent specified
